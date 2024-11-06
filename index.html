@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 33</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      body{
+        background-image:url('./images/student.jpeg')
+      }
+    </style>
+  </head>
+  <body>
+    
+
+    <button type="button" class="btn1" onclick="OpenButton()">Registration</button>
+
+    <div class="background-blur" id="background-blur">
+
+        <img src="./images/close.png" onclick="CloseButton()" class="close-icon" alt="Close icon png image"  >
+
+        <form>
+
+          <h1 style="text-align:center"> Student Registration</h1>
+
+          <label for="Fname" class="Heading">Enter Your First Name: </label>
+          <input type="text" id="Fname" name="Fname" placeholder="Enter name">
+          <br>
+          <br>
+
+          <label for="Lname" class="Heading">Enter Your Last Name: </label>
+          <input type="text" id="Lname" name="Lname" placeholder="Enter name">
+          <br>
+          <br>
+
+          <label for="MNO" class="Heading">Enter Your Mobile Number: </label>
+          <input type="number" id="MNO" name="MNO" placeholder="Enter Mobile No">
+          <br>
+          <br>
+
+
+          <label for="Email" class="Heading">Enter Your Email: </label>
+          <input  type="email" id="Email" name="Email" placeholder="Enter your email">
+          <br>
+          <br>
+
+          <label for="Faculty" class="Heading">Select Faculty:</label>
+          <select id="Faculty" name="Faculty">
+            <option value="science">Science</option>
+            <option value="commerce">Commerce</option>
+            <option value="arts">Arts</option>
+          </select>
+          <br>
+          <br>
+          <label for="gender" class="Heading">Select your gender :</label>
+          <input type="radio" id="gender" name="gender">Male
+          <input type="radio" id="gender" name="gender">Female
+          <br>
+          <br>
+          <button type="button" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
